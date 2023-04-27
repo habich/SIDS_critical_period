@@ -1,0 +1,384 @@
+pos_start;pos_end;len;field;description;reportingFlagPosision;Vers;Definition;Commentary
+1;6;6;FILLER;Filler;;;;
+7;;1;REVISION_10;Revision;;U,R;{"A":"State used the 2003 version of the US Standard Birth Certificate (Revised)","S":"State used the 1989 version of the US Standard Birth Certificate(Unrevised)"};
+8;;1;FILLER;Filler;;;;
+9;;1;LATEREC;Late Record Flag;;U,R;{"0":"Not late record","1":"Late record"};
+10;14;5;SEQNUM;Infant Death Number;;;{};This number uniquely identifies the same infant in the numerator and denominator-plus files.
+15;18;4;DOB_YY;Birth Year;;U,R;{};
+19;20;2;DOB_MM;Birth Month;;U,R;{"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11":"November","12":"December"};
+21;28;8;FILLER;Filler;;;;
+29;;1;DOB_WK;Weekday;;U,R;{"1":"Sunday","2":"Monday","3":"Tuesday","4":"Wednesday","5":"Thursday","6":"Friday","7":"Saturday"};
+30;31;2;OSTATE;Occurrence Territory;;U,R;{"GU":"Guam","PR":"Puerto Rico","VI":"Virgin Islands"};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+32;36;5;FILLER;Filler;;;;
+37;39;3;OCNTYFIPS;Occurrence FIPS County;;U,R;{"127":{"Puerto Rico":"San Juan", "Other Outlying Areas of the U.S.":""}, "999":{"Puerto Rico":"County less than 250,000", "Other Outlying Areas of the U.S.":"County less than 250,000"},"000":{"Puerto Rico":"", "Other Outlying Areas of the U.S.":"No county level geography"}};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+40;;1;OCNTYPOP;Occurrence County Pop;;U,R;{"0":"County of 1,000,000 or more","1":"County of 500,000 to 1,000,000","2":"County of 250,000 to 500,000","9":"County less than 250,000"};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+41;;1;BFACIL;Birth Place (Revised);676;R;{"1":"Hospital","2":"Freestanding Birth Center","3":"Home (intended)","4":"Home (not intended)","5":"Home (unknown if intended)","6":"Clinic / Doctor’s Office","7":"Other","9":"Unknown", " ":"Not on certificate"};
+42;;1;UBFACIL;Birth Place;;U,R;{"1":"Hospital","2":"Freestanding Birth Center","3":"Clinic / Doctor’s Office","4":"Residence","5":"Other","9":"Unknown"};
+43;58;16;FILLER;Filler;;;;
+59;;1;BFACIL3;Birth Place Recode;;U,R;{"1":"In Hospital","2": "Not in Hospital","3":"Unknown or Not Stated"};
+60;86;27;FILLER;Filler;;;;
+87;;1;MAGE_IMPFLG;Mother’s Age Imputed;;U,R;{" ":"Age not imputed","1":"Age imputed"};
+88;;1;MAGE_REPFLG;Reported Age of Mother Flag;;U,R;{" ":"Age not imputed","1":"Age imputed"};
+89;90;2;MAGER;Mother’s Age Recode 41;;U,R;{"12":"10 – 12 years","13":"13 years","14":"14 years","15":"15 years","16":"16 years","17":"17 years","18":"18 years","19":"19 years","20":"20 years","21":"21 years","22":"22 years","23":"23 years","24":"24 years","25":"25 years","26":"26 years","27":"27 years","28":"28 years","29":"29 years","30":"30 years","31":"31 years","32":"32 years","33":"33 years","34":"34 years","35":"35 years","36":"36 years", "37":"37 years","38":"38 years","39":"39 years","40":"40 years","41":"41 years","42":"42 years","43":"43 years","44":"44 years","45":"45 years","46":"46 years","47":"47 years","48":"48 years","49":"49 years","50":"50 - 64 years"};
+91;92;2;MAGER14;Mother’s Age Recode 14;;U,R;{"01":"under 15 years","03":"15 years","04":"16 years","05":"17 years","06":"18 years","07":"19 years","08":"20-24 years","09":"25-29 years","10":"30-34 years","11":"35-39 years","12":"40-44 years","13":"45-49 years","14":"50-64 years"};
+93;;1;MAGER9;Mother’s Age Recode 9;;U,R;{"1":"under 15 years","2":"15-19 years","3":"20-24 years","4":"25-29 years","5":"30-34 years","6":"35-39 years","7":"40-44 years","8":"45-49 years","9":"50-64 years"};
+94;95;2;MBCNTRY;Mother’s Birth Country;;R;{};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+96;108;13;FILLER;Filler;;;;
+109;110;2;MRTERR;Mother’s Residence;;U,R;{"GU":"Guam","PR":"Puerto Rico","VI":"Virgin Islands","CC":"Canada","CU":"Cuba","MX":"Mexico","US":"United States","XX":"Not Applicable","ZZ":"Not Classifiable"};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+111;113;3;FILLER;Filler;;;;
+114;116;3;MRCNTY;Mother’s County of Residence;;;{"127":{"Puerto Rico":"San Juan", "Other Outlying Areas of the U.S.":""}, "999":{"Puerto Rico":"County less than 250,000", "Other Outlying Areas of the U.S.":"County less than 250,000"},"000":{"Puerto Rico":"", "Other Outlying Areas of the U.S.":"No county level geography"}};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+117;131;15;FILLER;Filler;;;;
+132;;1;RCNTY_POP;Population of Residence County;;U,R;{"0":"County of 1,000,000 or more","1":"County of 500,000 to 1,000,000","2":"County of 250,000 to 500,000","9":"County less than 250,000","Z":"Foreign resident"};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+133;136;4;FILLER;Filler;;;;
+137;;1;RECTYPE;Record Type;;U,R;{"1":"RESIDENT: State and county of occurrence and residence","2":"NONRESIDENT: State and county of occurrence and residence are different."};This item is available in the territory file only, geographic codes are not available in the U.S. file.
+138;;1;RESTATUS;Residence Status;;U,R;{"1":{"United States":"RESIDENT: State and county of occurrence and residence are the same.", "Outlying areas of the US":"RESIDENT: State and county of occurrence and residence are the same. (Unique to Guam, all US residents are considered residents of Guam and thus are assigned 1.)"},"2":{"United States":"INTRASTATE NONRESIDENT: State of occurrence and residence are the same but county is different.", "Outlying areas of the US":"INTRATERRITORY NONRESIDENT: Territory of occurrence and residence are the same but county is different.// INTERTERRITORY RESIDENT: Territory of occurrence and residence are different but both are US Territories."},"3":{"United States":"INTERSTATE NONRESIDENT: State of occurrence and residence are different but both are one of the 50 US states or District of Columbia.", "Outlying areas of the US":"FOREIGN RESIDENT: The residence is not a US Territory."},"4":{"United States":"FOREIGN RESIDENT: The state of residence is not one of the 50 US states or District of Columbia.", "Outlying areas of the US":""}};
+139;140;2;MBRACE;Mother’s Bridged Race;;R;{"01":"White – single race","02":"Black – single race","03":"American Indian – single race","04":"Asian Indian – single race","05":"Chinese – single race","06":"Filipino – single race","07":"Japanese – single race","08":"Korean – single race","09":"Vietnamese – single race","10":"Other Asian – single race","11":"Hawaiian – single race","12":"Guamanian – single race","13":"Samoan – single race","14":"Other Pacific Islander – single race","21":"White – bridged multiple race","22":"Black – bridged multiple race","23":"American Indian & Alaskan Native – bridged multiple race","24":"Asian / Pacific Islander – bridged multiple race"," ":"Not on certificate","00":"Other"};Includes only states reporting multiple race. Codes used for individuals reporting only one race. Codes 21-24 used for individuals reporting more than  one race that have been bridged to a single race. Code 24 also used for individuals reporting more than one Asian/Pacific Islander group.
+141;142;2;MRACE;Mother’s Race;;U;{"01":{"United States":"White","Puerto Rico":"White","Guam":"White","All other Outlying Areas of the US":"White"},"02":{"United States":"Black","Puerto Rico":"Black","Guam":"Black","All other Outlying Areas of the US":"Black"},"03":{"United States":"American Indian/Alaskan Native","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":"American Indian/Alaskan Native"},"04":{"United States":"Chinese","Puerto Rico":"","Guam":"Chinese","All other Outlying Areas of the US":"Chinese"},"05":{"United States":"Japanese","Puerto Rico":"","Guam":"Japanese","All other Outlying Areas of the US":"Japanese"},"06":{"United States":"Hawaiian (includes part Hawaiian)","Puerto Rico":"","Guam":"Hawaiian (includes part Hawaiian)","All other Outlying Areas of the US":"Hawaiian (includes part Hawaiian)"},"07":{"United States":"Filipino","Puerto Rico":"","Guam":"Filipino","All other Outlying Areas of the US":"Filipino"},"18":{"United States":"Asian Indian","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"28":{"United States":"Korean","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"38":{"United States":"Samoan","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"48":{"United States":"Vietnamese","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"58":{"United States":"Guamanian","Puerto Rico":"","Guam":"Guamanian","All other Outlying Areas of the US":""},"68":{"United States":"Other Asian or Pacific Islander in areas reporting codes 18-58.","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"78":{"United States":"Combined other Asian or Pacific Islander, includes 18-68 for areas that do not report them separately.","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"00":{"United States":"","Puerto Rico":"Other races","Guam":"","All other Outlying Areas of the US":""},"08":{"United States":"","Puerto Rico":"","Guam":"Other Asian or Pacific Islander","All other Outlying Areas of the US":"Other Asian or Pacific Islander"}, " ":{"United States":"Not on certificate","Puerto Rico":"Not on certificate","Guam":"Not on certificate","All other Outlying Areas of the US":"Not on certificate"}};
+143;;1;MRACEREC;Mother’s Race Recode;;U,R;{"1":{"United States and all Outlying Areas of the United States except Puerto Rico":"White","Puerto Rico":"White"},"2":{"United States and all Outlying Areas of the United States except Puerto Rico":"Black","Puerto Rico":"Black"},"3":{"United States and all Outlying Areas of the United States except Puerto Rico":"American Indian / Alaskan Native","Puerto Rico":""},"4":{"United States and all Outlying Areas of the United States except Puerto Rico":"Asian / Pacific Islander","Puerto Rico":""},"0":{"United States and all Outlying Areas of the United States except Puerto Rico":"","Puerto Rico":"Other (not classified as White or Black)"}};
+144;;1;MRACEIMP;Mother’s Race Imputed;;U,R;{" ":"Mother's' race not imputed", "1":"Unknown race imputed","2":"All other races, formerly coded 09, imputed"};
+145;147;3;FILLER;Filler;;;;
+148;;1;UMHISP;Mother’s Hispanic Origin;569;U,R;{"0":"Non-Hispanic","1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","9":"Origin unknown or not stated"};
+149;;1;MRACEHISP;Mother’s Race/Hispanic Origin;569;U,R;{"1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","6":"Non-Hispanic White","7":"Non-Hispanic Black","8":"Non-Hispanic Other Races","9":"Origin unknown or not stated"};
+150;152;3;FILLER;Filler;;;;
+153;;1;MAR;Mother’s Marital Status;652;U,R;{"1":{"United States and all Outlying Areas of the US except Puerto Rico":"Yes","Puerto Rico":"Yes"},"2":{"United States and all Outlying Areas of the US except Puerto Rico":"No","Puerto Rico":"Unmarried parents living together"}, "3":{"United States and all Outlying Areas of the US except Puerto Rico":"","Puerto Rico":"Unmarried parents not living together"}, "9":{"United States and all Outlying Areas of the US except Puerto Rico":"Unknown or not stated","Puerto Rico":"Unknown or not stated"}};
+154;;1;MAR_IMP;Mother’s Marital Status Imputed;;U,R;{" ":"Marital Status not imputed","1":"Marital Status imputed"};
+155;;1;MEDUC;Mother’s Education – Revised;571;R;{"1":"8th grade or less","2":"9th through 12th grade with no diploma","3":"High school graduate or GED completed","4":"Some college credit, but not a degree.","5":"Associate degree (AA,AS)","6":"Bachelor’s degree (BA, AB, BS) ","7":"Master’s degree (MA, MS, MEng, MEd, MSW, MBA)","8":"Doctorate (PhD, EdD) or Professional Degree (MD, DDS, DVM, LLB, JD)","9":"Unknown", " ":"Not on cerificate"};
+156;157;2;UMEDUC;Mother’s Educ–Unrevised;647;U;{"00":"No formal education","01":"1 year of elementary school","02":"2 years of elementary school","03":"3 years of elementary school","04":"4 years of elementary school","05":"5 years of elementary school","06":"6 years of elementary school","07":"7 years of elementary school","08":"8 years of elementary school","09":"1 year of high school","10":"2 years of high school","11":"3 years of high school","12":"4 years of high school","13":"1 year of college","14":"2 years of college","15":"3 years of college","16":"4 years of college","17":"5 or more years of college","99":"Not stated"," ":"Not on certificate"};
+158;;1;MEDUC_REC;Mother’s Education Recode;647;U;{"1":"0 –8 years","2":"9 –11 years","3":"12 years","4":"13 –15 years","5":"16 years and over","6":"Not stated"," ":"Not on certificate"};
+159;174;16;FILLER;Filler;;;;
+175;;1;FAGERPT_FLG;Father’s Reported Age Used;;U,R;{" ":"Father’s reported age not used","1":"Father’s reported age used"};
+176;181;6;FILLER;Filler;;;;
+182;183;2;FAGECOMB;Father’s Combined Age (Revised);c571;R;{"99":"Unknown"," ":"Not on certificate"};09-98 Father’s combined age in years
+184;185;2;UFAGECOMB;Father’s Combined Age (Unrevised);;U;{"99":"Unknown or not stated"};10-98 Father’s combined age in years
+186;187;2;FAGEREC11;Father’s Age Recode 11;;U,R;{"01":"Under 15 years","02":"15-19 years","03":"20-24 years","04":"25-29 years","05":"30-34 years","06":"35-39 years","07":"40-44 years","08":"45-49 years","09":"50-54 years","10":"55-98 years","11":"Not stated"};
+188;189;2;FBRACE;Father’s Bridged Race;;R;{"01":"White – single race","02":"Black – single race","03":"American Indian – single race","04":"Asian Indian – single race","05":"Chinese – single race","06":"Filipino – single race","07":"Japanese – single race more than one Asian/Pacific Islander group.","08":"Korean – single race","09":"Vietnamese – single race","10":"Other Asian – single race","11":"Hawaiian – single race","12":"Guamanian – single race","13":"Samoan – single race","14":"Other Pacific Islander – single race","21":"White – bridged multiple race","22":"Black – bridged multiple race","23":"American Indian & Alaskan Native – bridged multiple race","24":"Asian / Pacific Islander – bridged multiple race","99":"Unknown or not stated, also includes states not reporting multiple race"," ":"Not on certificate","00":"Other"};United States and non Puerto Rican Territories Includes only states reporting multiple race. Codes 01-14 used for individuals reporting only one race. Codes 21-24 used for individuals reporting more than  one race that have been bridged to a single race. Code 24 also used for individuals reporting
+190;;1;FILLER;Filler;;;;
+191;;1;FRACEREC;Father’s Race Recode;;U,R;{"1":{"United States and all Outlying Areas of the US except Puerto Rico":"White","Puerto Rico":"White"},"2":{"United States and all Outlying Areas of the US except Puerto Rico":"Black","Puerto Rico":"Black"},"3":{"United States and all Outlying Areas of the US except Puerto Rico":"American Indian / Alaskan Native","Puerto Rico":""},"4":{"United States and all Outlying Areas of the US except Puerto Rico":"Asian / Pacific Islander","Puerto Rico":""},"9":{"United States and all Outlying Areas of the US except Puerto Rico":"Unknown or not stated","Puerto Rico":"Unknown or not stated"},"0":{"United States and all Outlying Areas of the US except Puerto Rico":"","Puerto Rico":"Other (not classified as White or Black)"}};
+192;194;3;FILLER;Filler;;;;
+195;;1;UFHISP;Father’s Hispanic Origin;570;U,R;{"0":"Non-Hispanic","1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","9":"Origin unknown or not stated"};
+196;;1;FRACEHISP;Father’s Race/Hisp Origin;570;U,R;{"1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","6":"Non-Hispanic White","7":"Non-Hispanic Black","8":"Non-Hispanic - Other Races","9":"Origin unknown or not stated"};
+197;198;2;FILLER;Filler;;;;
+199;200;2;UFRACE;Father’s Race (Unrevised);;U;{"01":{"United States":"White","Puerto Rico":"White","Guam":"White","All other Outlying Areas of the US":"White"},"02":{"United States":"Black","Puerto Rico":"Black","Guam":"Black","All other Outlying Areas of the US":"Black"},"03":{"United States":"American Indian/Alaskan Native","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":"American Indian/Alaskan Native"},"04":{"United States":"Chinese","Puerto Rico":"","Guam":"Chinese","All other Outlying Areas of the US":"Chinese"},"05":{"United States":"Japanese","Puerto Rico":"","Guam":"Japanese","All other Outlying Areas of the US":"Japanese"},"06":{"United States":"Hawaiian (includes part Hawaiian)","Puerto Rico":"","Guam":"Hawaiian (includes part Hawaiian)","All other Outlying Areas of the US":"Hawaiian (includes part Hawaiian)"},"07":{"United States":"Filipino","Puerto Rico":"","Guam":"Filipino","All other Outlying Areas of the US":"Filipino"},"18":{"United States":"Asian Indian","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"28":{"United States":"Korean","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"38":{"United States":"Samoan","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"48":{"United States":"Vietnamese","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"58":{"United States":"Guamanian","Puerto Rico":"","Guam":"Guamanian","All other Outlying Areas of the US":""},"68":{"United States":"Other Asian or Pacific Islander in areas reporting codes 18-58.","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"78":{"United States":"Combined other Asian or Pacific Islander, includes 18-68 for areas that do not report them separately.","Puerto Rico":"","Guam":"","All other Outlying Areas of the US":""},"00":{"United States":"","Puerto Rico":"Other races","Guam":"","All other Outlying Areas of the US":""},"08":{"United States":"","Puerto Rico":"","Guam":"Other Asian or Pacific Islander","All other Outlying Areas of the US":"Other Asian or Pacific Islander"}, " ":{"United States":"Not on certificate","Puerto Rico":"Not on certificate","Guam":"Not on certificate","All other Outlying Areas of the US":"Not on certificate"}};
+201;211;11;FILLER;Filler;;;;
+212;;1;LBO;Live Birth Order;;U,R;{"8":"8 or more live births","9":"Unknown or not stated"};1-7 Number of live birth order.
+213;216;4;FILLER;Filler;;;;
+217;;1;TBO;Total Birth Order;;U,R;{"8":"8 or more live births","9":"Unknown or not stated"};1-7 Number of live birth order.
+218;244;27;FILLER;Filler;;;;
+245;246;2;PRECARE;Month Prenatal Care Began (Revised);668;R;{"00":"No prenatal care","99":"Unknown or not stated"};01-10 Month prenatal care began
+247;;1;PRECARE_REC;Month Prenatal Care Began Recode (Revised);668;R;{"1":"1st to 3rd month","2":"4th to 6th month","3":"7th to final month","4":"No prenatal care","5":"Unknown"," ":"Not on certificate"};
+248;255;8;FILLER;Filler;;;;
+256;257;2;MPCB;Month Prenatal Care Began (Unrevised);669;U;{"00":"No prenatal care","99":"Unknown"," ":"Not on certificate"};01-10 Month prenatal care began
+258;;1;MPCB_REC6;Month Prenatal Care Began Recode 6(Unrevised);669;U;{"1":"1st to 2rd month","2":"3rd month","3":"4th to 6th month","4":"7th to final month","5":"No prenatal care","6":"Unknown"," ":"Not on certificate"};
+259;;1;MPCB_REC5;Month Prenatal Care Began Recode 5(Unrevised);669;U;{"1":"1st trimester (1st to 3rd month)","2":"2nd trimester (4th to 6th month)","3":"3rd trimester (7th to final month)","4":"No prenatal care","5":"Unknown"," ":"Not on certificate"};
+260;269;10;FILLER;Filler;;;;
+270;271;2;UPREVIS;Number of Prenatal Visits;671;U,R;{"99":"Unknown or not stated"};00-49 Number of prenatal visits
+272;273;2;PREVIS_REC;Number of Prenatal Visits Recode;671;U,R;{"01":"No visits","02":"1 to 2 visits","03":"3 to 4 visits","04":"5 to 6 visits","05":"7 to 8 visits","06":"9 to 10 visits","07":"11 to 12 visits","08":"13 to 14 visits","09":"15 to 16 visits","10":"17 to 18 visits","11":"19 or more visits","12":"Unknown or not stated"};
+274;275;2;FILLER;Filler;;;;
+276;277;2;WTGAIN;Weight Gain;648;U,R;{"98":"98 pounds and over","99":"Unknown or not stated"};00-97 Weight gain in pounds
+278;;1;WTGAIN_REC;Weight Gain Recode;648;U,R;{"1":"Less than 11 pounds","2":"11 to 20 pounds","3":"21 to 30 pounds","4":"31 to 4 0 pounds","5":"41 to 98 pounds","9":"Unknown or not stated"};
+279;;1;FILLER;Filler;;;;
+280;;1;DFPC_IMP;Day of Date First Prenatal Care Imputed;;R;{" ":"Day of date first prenatal care not imputed","1":"Day of date first prenatal care imputed"};
+281;283;3;FILLER;Filler;;;;
+284;285;2;CIG_1;Cigarettes 1st Trimester;575;R;{"98":"98 or more cigarettes daily","99":"Unknown or not stated"};00-97 Number of cigarettes daily
+286;287;2;CIG_2;Cigarettes 2nd Trimester;575;R;{"98":"98 or more cigarettes daily","99":"Unknown or not stated"};00-97 Number of cigarettes daily
+288;289;2;CIG_3;Cigarettes 3rd Trimester;575;R;{"98":"98 or more cigarettes daily","99":"Unknown or not stated"};00-97 Number of cigarettes daily
+290;;1;TOBUSE;Tobacco Use;667;U;{"1":"Yes","2":"No"};
+291;292;2;CIGS;Cigarettes per Day;667;U;{"98":"98 or more cigarettes daily","99":"Unknown"," ":"Not on certificate"};00-97 Number of cigarettes daily
+293;;1;UCIG_REC6;Cigarette Recode;667;U;{"0":"Non-smoker","1":"1 to 5 cigarettes daily","2":"6 to 10 cigarettes daily","3":"11 to 20 cigarettes daily","4":"21 to 40 cigarettes daily","5":"41 or more cigarettes daily","6":"Unknown"," ":"Not on certificate"};
+294;;1;CIG_REC;Cigarette Recode (Revised);575;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+295;312;18;FILLER;Filler;;;;
+313;;1;RF_DIAB;Prepregnancy Diabetes;582;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+314;;1;RF_GEST;Gestational Diabetes;583;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+315;;1;RF_PHYP;Prepregnancy Hypertension;584;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+316;;1;RF_GHYP;Gestational Hypertension;585;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+317;;1;RF_ECLAM;Hypertension Eclampsia;586;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+318;;1;RF_PPTERM;Previous Preterm Birth;587;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+319;;1;RF_PPOUTC;Poor Pregnancy Outcome;588;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+320;323;4;FILLER;Filler;;;;
+324;;1;RF_CESAR;Previous Cesareans;593;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+325;326;2;RF_CESARN;Previous Cesareans Num;594;R;{"00":"None","99":"Unknown"," ":"Not on certificate"};01-30 Number of previous cesareans
+327;;1;FILLER;Filler;;;;
+328;330;3;FILLER;Filler;;;;
+331;;1;URF_DIAB;Diabetes;684;U,R;{"1":"Yes","2":"No","9":"Unknown"," ":"Not on certificate"};
+332;334;3;FILLER;Filler;;;;
+335;;1;URF_CHYPER;Cronic Hypertension;688;U,R;{"1":"Yes","2":"No","9":"Unknown"," ":"Not on certificate"};
+336;;1;URF_PHYPER;Prepregnacny Associated Hypertension;689;U,R;{"1":"Yes","2":"No","9":"Unknown"," ":"Not on certificate"};
+337;;1;URF_ECLAM;Eclampsia;690;U,R;{"1":"Yes","2":"No","9":"Unknown"," ":"Not on certificate"};
+338;350;13;FILLER;Filler;;;;
+351;;1;OP_CERV;Cervical Cerclage;601;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+352;;1;OP_TOCOL;Tocolysis;602;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+353;;1;OP_ECVS;Successful External Cephalic Version;603;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+354;;1;OP_ECVF;Failed External Cephalic Version;604;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+355;356;2;FILLER;Filler;;;;
+357;;1;UOP_INDUC;Induction of Labor;703;U,R;{"1":"Yes","2":"No","8":"Not on certificate" ,"9":"Unknown"," ":"Not on certificate"};
+358;;1;FILLER;Filler;;;;
+359;;1;UOP_TOCOL;Tocolysis;705;U,R;{"1":"Yes","2":"No","8":"Not on certificate" ,"9":"Unknown"," ":"Not on certificate"};
+360;361;2;FILLER;Filler;;;;
+362;;1;ON_RUPTR;Premature Rupture of Membrane;605;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+363;;1;ON_PRECIP;Precipitous Labor;606;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+364;;1;ON_PROL;Prolonged Labor;607;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+365;;1;LD_INDL;Induction of Labor;608;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+366;;1;LD_AUGM;Augmentation of Labor;609;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+367;;1;LD_NVPR;Non-Vertex Presentation;610;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+368;;1;LD_STER;Steroids;611;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+369;;1;LD_ANTI;Antibiotics;612;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+370;;1;LD_CHOR;Chorioamnionitis;613;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+371;;1;LD_MECS;Meconium Staining;614;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+372;;1;LD_FINT;Fetal Intolerance;615;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+373;;1;LD_ANES;Anesthesia;616;R;{"Y":"Yes","N":"No","U":"Unknown"," ":"Not on certificate"};
+374;;1;FILLER;Filler;;;;
+375;;1;ULD_MECO;Meconium;712;U,R;{"1":"Yes","2":"No","8":"Not on certificate" ,"9":"Unknown"," ":"Not on certificate"};
+376;380;5;FILLER;Filler;;;;
+381;;1;ULD_PRECIP;Precipitous Labor;718;U,R;{"1":"Yes","2":"No","8":"Not on certificate" ,"9":"Unknown"," ":"Not on certificate"};
+382;383;2;FILLER;Filler;;;;
+384;;1;ULD_BREECH;Breech;721;U,R;{"1":"Yes","2":"No","8":"Not on certificate" ,"9":"Unknown"," ":"Not on certificate"};
+385;389;5;FILLER;Filler;;;;
+390;;1;ME_ATTF;Attempted Forceps;617;R;{"1":"Yes","2":"No","8":"Not on certificate" ,"9":"Unknown"," ":"Not on certificate"};
+391;;1;ME_ATTV;Attempted Vacuum;618;R;{"1":"Yes","2":"No","8":"Not on certificate" ,"9":"Unknown"," ":"Not on certificate"};
+392;;1;ME_PRES;Fetal Presentation;619;R;{"1":"Cephalic","2":"Breech","3":"Other" ,"9":"Unknown"," ":"Not on certificate"};
+393;;1;ME_ROUT;Route & Method of Delivery;620;R;{"1":"Spontaneous","2":"Forceps","3":"Vacuum","4":"Cesarean","9":"Unknown"," ":"Not on certificate"};
+394;;1;ME_TRIAL;Trial of Labor Attempted;621;R;{"Y":"Yes","N":"No","X":"Not applicable","U":"Unknown"," ":"Not on certificate"};
+395;;1;UME_VAG;Vaginal;730;U;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+396;;1;UME_VBAC;Vaginal after C-Section;731;U;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+397;;1;UME_PRIMC;Primary C-Section;732;U;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+398;;1;UME_REPEC;Repeat C-Section;733;U;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+399;;1;UME_FORCP;Forceps;734;U,R;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+400;;1;UME_VAC;Vacuum;735;U,R;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+401;;1;RDMETH_REC;Delivery Method Recode (Revised);679;R;{"1":"Vaginal (excludes vaginal after previous C-section)","2":"Vaginal after previous c-section","3":"Primary C-section","4":"Repeat C-section","5":"Vaginal (unknown if previous c-section) (2003 Standard only)","6":"C-section (unknown if previous c-section) (2003 Standard Only","9":"Not stated"};
+402;;1;UDMETH_REC;Delivery Method Recode (Unrevised);680;U;{"1":"Vaginal (excludes vaginal after previous C-section)","2":"Vaginal after previous c-section","3":"Primary C-section","4":"Repeat C-section","9":"Not stated"};
+403;;1;DMETH_REC;Delivery Method Recode Combined;;U,R;{"1":"Vaginal","2":"C-Section","9":"Unknown"};
+404;409;6;FILLER;Filler;;;;
+410;;1;ATTEND;Attendant;;U,R;{"1":"Doctor of Medicine (MD)","2":"Doctor of Osteopathy (DO)","3":"Certified Nurse Midwife (CNM)","4":"Other Midwife","5":"Other","9":"Unknown or not stated"};
+411;414;4;FILLER;Filler;;;;
+415;416;2;APGAR5;Five Minute APGAR Score;574;U,R;{"99":"Unknown or not stated"};00-10 A score of 0-10
+417;;1;APGAR5R;Five Minute APGAR Recode;574;U,R;{"1":"A score of 0-3","2":"A score of 4-6","3":"A score of 7-8","4":"A score of 9-10","5":"Unknown  or not stated"};
+418;422;5;FILLER;Filler;;;;
+423;;1;DPLURAL;Plurality;;U,R;{"1":"Single","2":"Twin","3":"Triplet","4":"Quadruplet","5":"Quintuplet or higher"};
+424;;1;FILLER;Filler;;;;
+425;;1;IMP_PLUR;Plurality Imputed;;U,R;{" ":"Plurality is imputed","1":"Plurality is not imputed"};
+426;435;10;FILLER;Filler;;;;
+436;;1;SEX;Sex of Infant;;U,R;{"M":"Male","F":"Female"};
+437;;1;IMP_SEX;Imputed Sex;;U,R;{" ":"Infant Sex not Imputed","1":"Infant Sex is Imputed"};
+438;439;2;DLMP_MM;Last Normal Menses Month;;U,R;{"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11":"November","12":"December","99":"Unknown or not stated"};
+440;441;2;FILLER;Filler;;;;
+442;445;4;DLMP_YY;Year of Last Normal Menses Began;;U,R;{"9999":"Unknown or not stated"};nnnn Year of last normal menses
+446;447;2;ESTGEST;Obstetric/Clinical Gestation Est.;573;U,R;{"99":"Unknown"};17-47 17th through 47th week of Gestation
+448;450;3;FILLER;Filler;;;;
+451;452;2;COMBGEST;Gestation – Detail in Weeks;670;U,R;{"99":"Unknown"};17-47 17th through 47th week of Gestation
+453;454;2;GESTREC10;Gestation Recode 10;;U,R;{"01":"Under 20 weeks","02":"20-27 weeks","03":"28-31 weeks","04":"32-33 weeks","05":"34-36 weeks","06":"37-38 weeks","07":"39 weeks","08":"40 weeks","09":"41 weeks","10":"42 weeks and over","99":"Unknown"};
+455;;1;GESTREC3;Gestation Recode 3;;U,R;{"1":"Under 37 weeks","2":"37 weeks and over","3":"Not stated"};
+456;;1;OBGEST_FLG;Clinical Estimate of Gestation Used Flag;;U,R;{" ":"Clinical Estimate is not used","1":"Clinical Estimate is used"};
+457;;1;GEST_IMP;Gestation Imputed Flag;;U,R;{" ":"Gestation is not imputed","1":"Gestation is imputed"};
+458;466;9;FILLER;Filler;;;;
+467;470;4;BRTHWGT;Imputed Birth Weight;;U,R;{"9999":"Not stated birth weight"};0227-8165 Number of grams
+471;472;2;BWTR14;Birth Weight Recode 14;;U,R;{"01":"227 - 499 grams","02":"500 – 749 grams","03":"750 - 999 grams","04":"1000 - 1249 grams","05":"1250 – 1499 grams","06":"1500 – 1999 grams","07":"2000 – 2499 grams","08":"2500 – 2999 grams","09":"3000 – 3400 grams","10":"3500 – 3999 grams","11":"4000 – 4499 grams","12":"4500 – 4999 grams","13":"5000 – 8165 grams","14":"Not Stated"};
+473;;1;BWTR4;Birth Weight Recode 4;;U,R;{"1":"227- 1499 grams","2":"1500 – 2499 grams","3":"2500 - 8165 grams","4":"Unknown or not stated"};
+474;;1;FILLER;Filler;;;;
+475;;1;BWTIMP;Imputed Birth Weight Flag;;U,R;{" ":"Birth Weight is not imputed","1":"Birth Weight is imputed"};
+476;;1;AB_AVEN1;Assisted Ventilation;628;R;{"Y":"Yes, Complication reported","N":"No Complication reported","U":"Unknown or not stated", " ":"Not on Certificate"};
+477;;1;AB_AVEN6;Assisted Ventilation > 6 hrs;629;R;{"Y":"Yes, Complication reported","N":"No Complication reported","U":"Unknown or not stated", " ":"Not on Certificate"};
+478;;1;AB_NICU;Admission to NICU;630;R;{"Y":"Yes, Complication reported","N":"No Complication reported","U":"Unknown or not stated", " ":"Not on Certificate"};
+479;;1;AB_SURF;Surfactant;631;R;{"Y":"Yes, Complication reported","N":"No Complication reported","U":"Unknown or not stated", " ":"Not on Certificate"};
+480;;1;AB_ANTI;Antibiotics;632;R;{"Y":"Yes, Complication reported","N":"No Complication reported","U":"Unknown or not stated", " ":"Not on Certificate"};
+481;;1;AB_SEIZ;Seizures;633;R;{"Y":"Yes, Complication reported","N":"No Complication reported","U":"Unknown or not stated", " ":"Not on Certificate"};
+482;;1;AB_BINJ;Birth Injury;634;R;{"Y":"Yes, Complication reported","N":"No Complication reported","U":"Unknown or not stated", " ":"Not on Certificate"};
+483;491;9;FILLER;Filler;;;;
+492;;1;CA_ANEN;Anencephaly;635;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+493;;1;CA_MNSB;Meningomyelocele / Spina Bifida;636;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+494;;1;CA_CCHD;Cyonotic Congenital Heart Disease;637;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+495;;1;CA_CDH;Congenital Diaphragmatic Hernia;638;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+496;;1;CA_OMPH;Omphalocele;639;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+497;;1;CA_GAST;Gastrochisis;640;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+498;;1;CA_LIMB;Limb Reduction Defect;641;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+499;;1;CA_CLEFT;Cleft Lip w/ or w/o Cleft Palate;642;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+500;;1;CA_CLPAL;Cleft Palate alone;643;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown", " ":"Not on Certificate"};
+501;;1;CA_DOWN;Downs Syndrome;644;R;{"C":"Confirmed","P":"Pending","N":"No","U":"Unknown"," ":"Not on certificat"};
+502;;1;CA_DISOR;Suspected Chromosomal Disorder;645;R;{"C":"Confirmed","P":"Pending","N":"No","U":"Unknown"," ":"Not on certificat"};
+503;;1;CA_HYPO;Hypospadias;646;R;{"Y":"Yes, anomaly reported","N":"No, anomaly not reported","U":"Unknown"," ":"Not on certificate"};
+504;;1;UCA_ANEN;Anencephalus;752;U,R;{"1":"Anomaly reported","2":"Anomaly not reported","9":"Anomaly not classifiable"," ":"Not on certificate"};
+505;;1;UCA_SPINA;Spina Bifida / Meningocele;753;U,R;{"1":"Anomaly reported","2":"Anomaly not reported","9":"Anomaly not classifiable"," ":"Not on certificate"};
+506;512;7;FILLER;Filler;;;;
+513;;1;UCA_OMPHA;Omphalocele / Gastroschisis;761;U,R;{"1":"Anomaly reported","2":"Anomaly not reported","9":"Anomaly not classifiable"," ":"Not on certificate"};
+514;517;4;FILLER;Filler;;;;
+518;;1;UCA_CELFTLP;Cleft Lip / Palate;766;U,R;{"1":"Anomaly reported","2":"Anomaly not reported","9":"Anomaly not classifiable"," ":"Not on certificate"};
+519;522;4;FILLER;Filler;;;;
+523;;1;UCA_DOWNS;Downs Syndrome;771;U,R;{"1":"Anomaly reported","2":"Anomaly not reported","9":"Anomaly not classifiable"," ":"Not on certificate"};
+524;568;45;FILLER;Filler;;;;
+569;;1;F_MORIGIN;Origin of Mother;;U,R;{"0":"Not reporting","1":"Reporting"};
+570;;1;F_FORIGIN;Origin of Father;;U,R;{"0":"Not reporting","1":"Reporting"};
+571;;1;F_MEDUC;Education of Mother;;R;{"0":"Not reporting","1":"Reporting"};
+572;;1;FILLER;Filler;;;;
+573;;1;F_CLINEST;Clinical Estimate of Gestation;;U,R;{"0":"Not reporting","1":"Reporting"};
+574;;1;F_APGAR5;Five minute APGAR;;U,R;{"0":"Not reporting","1":"Reporting"};
+575;;1;F_TOBACO;Tobacco use;;R;{"0":"Not reporting","1":"Reporting"};
+576;581;6;FILLER;Filler;;;;
+582;;1;F_RF_PDIAB;Prepregnancy Diabetes;;R;{"0":"Not reporting","1":"Reporting"};
+583;;1;F_RF_GDIAB;Gestational Diabetes;;R;{"0":"Not reporting","1":"Reporting"};
+584;;1;F_RF_PHYPER;Prepregnancy Hypertension;;R;{"0":"Not reporting","1":"Reporting"};
+585;;1;F_RF_GHYPER;Gestational Hypertension;;R;{"0":"Not reporting","1":"Reporting"};
+586;;1;F_RF_ECLAMP;Hypertension Eclampsia;;R;{"0":"Not reporting","1":"Reporting"};
+587;;1;F_RF_PPB;Previous Preterm Birth;;R;{"0":"Not reporting","1":"Reporting"};
+588;;1;F_RF_PPO;Poor Pregnancy outcomes;;R;{"0":"Not reporting","1":"Reporting"};
+589;592;4;FILLER;Filler;;;;
+593;;1;F_RF_CESAR;Previous Cesarean;;R;{"0":"Not reporting","1":"Reporting"};
+594;;1;F_RF_NCESAR;Number of Previous Cesareans;;R;{"0":"Not reporting","1":"Reporting"};
+595;600;6;FILLER;Filler;;;;
+601;;1;F_OB_CERVIC;Cervical Cerclage;;R;{"0":"Not reporting","1":"Reporting"};
+602;;1;F_OB_TOCO;Tocolysis;;R;{"0":"Not reporting","1":"Reporting"};
+603;;1;F_OB_SUCC;Successful External Cephalic Version;;R;{"0":"Not reporting","1":"Reporting"};
+604;;1;F_OB_FAIL;Failed External Cephalic Version;;R;{"0":"Not reporting","1":"Reporting"};
+605;;1;F_OL_RUPTURE;Premature Rupture of the Membranes;;R;{"0":"Not reporting","1":"Reporting"};
+606;;1;F_OL_PRECIP;Precipitous Labor;;R;{"0":"Not reporting","1":"Reporting"};
+607;;1;F_OL_PROLONG;Prolonged Labor;;R;{"0":"Not reporting","1":"Reporting"};
+608;;1;F_LD_INDUCT;Induction of Labor;;R;{"0":"Not reporting","1":"Reporting"};
+609;;1;F_LD_AUGMENT;Augmentation of Labor;;R;{"0":"Not reporting","1":"Reporting"};
+610;;1;F_LD_NVRTX;Non-Vertex Presentation;;R;{"0":"Not reporting","1":"Reporting"};
+611;;1;F_LD_STERIODS;Steroids;;R;{"0":"Not reporting","1":"Reporting"};
+612;;1;F_LD_ANTIBIO;Antibiotics;;R;{"0":"Not reporting","1":"Reporting"};
+613;;1;F_LD_CHORIO;Chorioamnionitis;;R;{"0":"Not reporting","1":"Reporting"};
+614;;1;F_LD_MECON;Meconium Staining;;R;{"0":"Not reporting","1":"Reporting"};
+615;;1;F_LD_FINTOL;Fetal Intolerance;;R;{"0":"Not reporting","1":"Reporting"};
+616;;1;F_LD_ANESTH;Anesthesia;;R;{"0":"Not reporting","1":"Reporting"};
+617;;1;F_MD_ATTFOR;Attempted Forceps;;R;{"0":"Not reporting","1":"Reporting"};
+618;;1;F_MD_ATTVAC;Attempted Vacuum;;R;{"0":"Not reporting","1":"Reporting"};
+619;;1;F_MD_PRESENT;Fetal Presentation;;R;{"0":"Not reporting","1":"Reporting"};
+620;;1;F_MD_ROUTE;Final Route and Method of Delivery;;R;{"0":"Not reporting","1":"Reporting"};
+621;;1;F_MD_TRIAL;Trial of Labor Attempted;;R;{"0":"Not reporting","1":"Reporting"};
+622;627;6;FILLER;Filler;;;;
+628;;1;F_AB_VENT;Assisted Ventilation;;R;{"0":"Not reporting","1":"Reporting"};
+629;;1;F_AB_VENT6;Assisted Ventilation >6 hrs;;R;{"0":"Not reporting","1":"Reporting"};
+630;;1;F_AB_NIUC;Admission to NICU;;R;{"0":"Not reporting","1":"Reporting"};
+631;;1;F_AB_SURFAC;Surfactant;;R;{"0":"Not reporting","1":"Reporting"};
+632;;1;F_AB_ANTIBIO;Antibiotics;;R;{"0":"Not reporting","1":"Reporting"};
+633;;1;F_AB_SEIZ;Seizures;;R;{"0":"Not reporting","1":"Reporting"};
+634;;1;F_AB_INJ;Birth Injury;;R;{"0":"Not reporting","1":"Reporting"};
+635;;1;F_CA_ANEN;Anencephaly;;R;{"0":"Not reporting","1":"Reporting"};
+636;;1;F_CA_MENIN;Meningomyelocele/Spina Bifida;;R;{"0":"Not reporting","1":"Reporting"};
+637;;1;F_CA_HEART;Cyanotic Congenital Heart Disease;;R;{"0":"Not reporting","1":"Reporting"};
+638;;1;F_CA_HERNIA;Congenital Diaphragmatic Hernia;;R;{"0":"Not reporting","1":"Reporting"};
+639;;1;F_CA_OMPHA;Omphalocele;;R;{"0":"Not reporting","1":"Reporting"};
+640;;1;F_CA_GASTRO;Gastroschisis;;R;{"0":"Not reporting","1":"Reporting"};
+641;;1;F_CA_LIMB;Limb Reduction Defect;;R;{"0":"Not reporting","1":"Reporting"};
+642;;1;F_CA_CLEFTLP;Cleft Lip with or without Cleft  Palate;;R;{"0":"Not reporting","1":"Reporting"};
+643;;1;F_CA_CLEFT;Cleft Plate Alone;;R;{"0":"Not reporting","1":"Reporting"};
+644;;1;F_CA_DOWNS;Down Syndrome;;R;{"0":"Not reporting","1":"Reporting"};
+645;;1;F_CA_CHROM;Suspected Chromosomal Disorder;;R;{"0":"Not reporting","1":"Reporting"};
+646;;1;F_CA_HYPOS;Hypospadias;;R;{"0":"Not reporting","1":"Reporting"};
+647;;1;F_MED;Mother’s Education;;U;{"0":"Not reporting","1":"Reporting"};
+648;;1;F_WTGAIN;Weight Gain;;U,R;{"0":"Not reporting","1":"Reporting"};
+649;666;18;FILLER;Filler;;;;
+667;;1;F_TOBAC;Tobacco Use;;U;{"0":"Not reporting","1":"Reporting"};
+668;;1;F_MPCB;Month Prenatal Care Began;;R;{"0":"Not reporting","1":"Reporting"};
+669;;1;F_MPCB_U;Month Prenatal Care Began;;U;{"0":"Not reporting","1":"Reporting"};
+670;683;14;FILLER;Filler;;;;
+684;;1;F_URF_DIABETES;Diabetes;;U,R;{"0":"Not reporting","1":"Reporting"};
+685;687;3;FILLER;Filler;;;;
+688;;1;F_URF_CHYPER;Chronic Hypertension;;U,R; {"0":"Not reporting","1":"Reporting"};
+689;;1;F_URF_PHYPER;Prepregnancy Hypertension;;U,R;{"0":"Not reporting","1":"Reporting"};
+690;;1;F_URF_ECLAMP;Eclampsia;;U,R;{"0":"Not reporting","1":"Reporting"};
+691;702;12;FILLER;Filler;;;;
+703;;1;F_UOB_INDUCT;Induction;;U,R;{"0":"Not reporting","1":"Reporting"};
+704;;1;FILLER;Filler;;;;
+705;;1;F_UOB_TOCOL;Tocolysis;;U,R;{"0":"Not reporting","1":"Reporting"};
+706;711;6;FILLER;Filler;;;;
+712;;1;F_ULD_MECONIUM;Meconium;;U,R;{"0":"Not reporting","1":"Reporting"};
+713;717;5;FILLER;Filler;;;;
+718;;1;F_ULD_PRECIP;Precipitous Labor;;U,R;{"0":"Not reporting","1":"Reporting"};
+719;720;2;FILLER;Filler;;;;
+721;;1;F_ULD_BREECH;Breech;;U,R;{"0":"Not reporting","1":"Reporting"};
+722;729;8;FILLER;Filler;;;;
+730;;1;F_U_VAGINAL;Vaginal;;U;{"0":"Not reporting","1":"Reporting"};
+731;;1;F_U_VBAC;Vaginal after C-Section;;U;{"0":"Not reporting","1":"Reporting"};
+732;;1;F_U_PRIMAC;Primary C-Section;;U;{"0":"Not reporting","1":"Reporting"};
+733;;1;F_U_REPEAC;Repeat C-Section;;U;{"0":"Not reporting","1":"Reporting"};
+734;;1;F_U_FORCEP;Forceps;;U;{"0":"Not reporting","1":"Reporting"};
+735;;1;F_U_VACUUM;Vacuum;;U;{"0":"Not reporting","1":"Reporting"};
+736;751;16;FILLER;Filler;;;;
+752;;1;F_UCA_ANEN;Anencephalus;;U;{"0":"Not reporting","1":"Reporting"};
+753;;1;F_UCA_SPINA;Spina Bifida/ Meningocele;;U;{"0":"Not reporting","1":"Reporting"};
+754;760;7;FILLER;Filler;;;;
+761;;1;F_UCA_OMPHALO;Omphalocele/Gastroschisis;;U,R;{"0":"Not reporting","1":"Reporting"};
+762;765;4;FILLER;Filler;;;;
+766;;1;F_UCA_CLEFTLP;Cleft Lip/Palate;;U,R;{"0":"Not reporting","1":"Reporting"};
+767;768;2;FILLER;Filler;;;;
+769;;1;F_UCA_HERNIA;Hernia;;U,R;{"0":"Not reporting","1":"Reporting"};
+770;;1;FILLER;Filler;;;;
+771;;1;F_UCA_DOWNS;Downs Syndrome;;U,R;{"0":"Not reporting","1":"Reporting"};
+772;867;96;FILLER;Filler;;;;
+868;;1;FLGND_11;Flag indicating records in both numerator and denominator file;;;{"1":"Record in both files"," ":"Record not in both files"};
+869;871;3;FILLER;Filler;;;;
+872;874;3;AGED;Age at Death in Days;;;{};000-365 Number of days
+875;;1;AGER5;Infant age recode 5;;;{"1":"Under 1 hour","2":"1 – 23 hours","3":"1 – 6 days","4":"7 – 27 days (late neonatal)","5":"28 days and over (postneonatal)"};
+876;877;2;AGER22;Infant age recode 22;;;{" ":"Age 1 year and over or not stated","01":"Under 1 hour (includes not stated hours and minutes)","02":"1 – 23 hour","03":"1 day (includes not stated days)","04":"2 days","05":"3 days","06":"4 days","07":"5 days","08":"6 days","09":"7 days (includes not stated weeks)","10":"14 – 20 days","11":"21 – 27 days","12":"1 month (includes not stated months)","13":"2 months","14":"3 months","15":"4 months","16":"5 months","17":"6 months","18":"7 months","19":"8 months","20":"9 months","21":"10 months","22":"11 months"};
+878;;1;MANNER;Manner of Death;;;{"1":"Accident","2":"Suicide","3":"Homicide","4":"Pending investigation","5":"Could not determine","6":"Self-inflicted","7":"Natural"," ":"Not specified"};
+879;;1;DISPO;Method of Disposition;;;{"B":"Burial","C":"Cremation","O":"Other","U":"Unknown"};
+880;;1;AUTOPSY;Autopsy;;;{"Y":"Yes","N":"No","U":"Unknown"};
+881;;1;FILLER;Filler;;;;
+882;;1;PLACE;Place of injury for causes W00-Y34, except Y06.-;;;{"0":"Home","1":"School, other institution and public administrative area / Residential institution","2":"Sports and athletics area","3":"Street and highway","4":"Trade and service area","5":"Industrial and construction area","6":"Farm","7":"Other Specified Places","8":"Unspecified place"," ":"Cause other than W00-Y34, except Y06.- and Y07.-"};
+883;;1;FILLER;Filler;;;;
+884;887;4;UC0D;ICD Code (10th Revision);;;{};
+888;;1;FILLER;Filler;;;;
+889;891;3;UCODR130;130 Infant Cause Recode;;;{};001-158 Code Range
+892;;1;FILLER;Filler;;;;
+893;900;8;RECWT;Record Weight (no weights computed for possessions file);;;{};1.XXXXXX
+901;902;2;FILLER;Filler;;;;
+903;904;2;EANUM;Number of Entity-Axis Conditions;;;{};00-20 Code range
+905;911;7;ENTITY_1ST_C;1st Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+912;918;7;ENTITY_2ND_C;2nd Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+919;925;7;ENTITY_3RD_C;3rd Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+926;932;7;ENTITY_4TH_C;4th Condition;;;{};Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+933;939;7;ENTITY_5TH_C;5th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+940;946;7;ENTITY_6TH_C;6th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+947;953;7;ENTITY_7TH_C;7th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+954;960;7;ENTITY_8TH_C;8th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+961;967;7;ENTITY_9TH_C;9th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+968;974;7;ENTITY_10TH_C;10th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+975;981;7;ENTITY_11TH_C;11th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+982;988;7;ENTITY_12TH_C;12th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+989;995;7;ENTITY_13TH_C;13th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+996;1002;7;ENTITY_14TH_C;14th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+1003;1009;7;ENTITY_15TH_C;15th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+1010;1016;7;ENTITY_16TH_C;16th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+1017;1023;7;ENTITY_17TH_C;17th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+1024;1030;7;ENTITY_18TH_C;18th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+1031;1037;7;ENTITY_19TH_C;19th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+1038;1044;7;ENTITY_20TH_C;20th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+1045;1046;2;FILLER;Filler;;;;
+1047;1048;2;RANUM;Number of Record-Axis Conditions;;;{};00-20 Code range
+1049;1053;5;RECORD_1ST_C;1st Condition;;;{};1-4 ICD10 Code 5
+1054;1058;5;RECORD_2ND_C;2nd Condition;;;{};1-4 ICD10 Code 5
+1059;1063;5;RECORD_3RD_C;3rd Condition;;;{};1-4 ICD10 Code 5
+1064;1068;5;RECORD_4TH_C;4th Condition;;;{};1-4 ICD10 Code 5
+1069;1073;5;RECORD_5TH_C;5th Condition;;;{};1-4 ICD10 Code 5
+1074;1078;5;RECORD_6TH_C;6th Condition;;;{};1-4 ICD10 Code 5
+1079;1083;5;RECORD_7TH_C;7th Condition;;;{};1-4 ICD10 Code 5
+1084;1088;5;RECORD_8TH_C;8th Condition;;;{};1-4 ICD10 Code 5
+1089;1093;5;RECORD_9TH_C;9th Condition;;;{};1-4 ICD10 Code 5
+1094;1098;5;RECORD_10TH_C;10th Condition;;;{};1-4 ICD10 Code 5
+1099;1103;5;RECORD_11TH_C;11th Condition;;;{};1-4 ICD10 Code 5
+1104;1108;5;RECORD_12TH_C;12th Condition;;;{};1-4 ICD10 Code 5
+1109;1113;5;RECORD_13TH_C;13th Condition;;;{};1-4 ICD10 Code 5
+1114;1118;5;RECORD_14TH_C;14th Condition;;;{};1-4 ICD10 Code 5
+1119;1123;5;RECORD_15TH_C;15th Condition;;;{};1-4 ICD10 Code 5
+1124;1128;5;RECORD_16TH_C;16th Condition;;;{};1-4 ICD10 Code 5
+1129;1133;5;RECORD_17TH_C;17th Condition;;;{};1-4 ICD10 Code 5
+1134;1138;5;RECORD_18TH_C;18th Condition;;;{};1-4 ICD10 Code 5
+1139;1143;5;RECORD_19TH_C;19th Condition;;;{};1-4 ICD10 Code 5
+1144;1148;5;RECORD_20TH_C;20th Condition;;;{};1-4 ICD10 Code 5
+1149;1150;2;FILLER;Filler;;;;
+1151;;1;D_RESTATUS;Death Resident Status;;;{"1":{"United States Occurrence":"RESIDENTS State and County of Occurrence and Residence are the same.","Puerto Rico Occurrence":"RESIDENTS Territory and County-equivalent of Occurrence and Residence are the same.","Virgin Islands Occurrence":"RESIDENTS Territory and County-equivalent of Occurrence and Residence are the same.","Guam Occurrence":"RESIDENTS Occurred in Guam to a resident of Guam or to a resident of the U.S."},"2":{"United States Occurrence":"INTRASTATE NONRESIDENTS State of Occurrence and Residence are the same, but County is different.","Puerto Rico Occurrence":"INTRASTATE NONRESIDENTS Territory of Occurrence and Residence are the same, but County-equivalent is different","Virgin Islands Occurrence":"INTRASTATE NONRESIDENTS Territory of Occurrence and Residence are the same, but County-equivalent is different","Guam Occurrence":""},"3":{"United States Occurrence":"INTERSTATE NONRESIDENTS State of Occurrence and Residence are different, but both are in the U.S","Puerto Rico Occurrence":"  INTERTERRITORY NONRESIDENTS Territory of occurrence and residence are different, but both are a Territory","Virgin Islands Occurrence":"INTERTERRITORY NONRESIDENTS Territory of occurrence and residence are different, but both are a Territory.","Guam Occurrence":"  INTERTERRITORY NONRESIDENTS Territory of occurrence and residence are different, but both are a Territory."}, "4":{"United States Occurrence":"FOREIGN RESIDENTS State of Occurrence is one of the 50 States or the District of Columbia, but Place of Residence is outside of the U.S.","Puerto Rico Occurrence":"FOREIGN RESIDENTS Occurred in Puerto Rico to a resident of any other place.","Virgin Islands Occurrence":"FOREIGN RESIDENTS Occurred in Virgin Islands to a resident of any other place.","Guam Occurrence":"FOREIGN RESIDENTS Occurred in Guam to a resident of any place other than Guam or the U.S"}};
+1152;1153;2;STOCCFIPD;State of Occurrence (FIPS) of Death;;;{"PR":"Puerto Rico","VI":"Virgin Islands","GU":"Guam"};This item is available in the territory file only, geography codes are not available in the US file
+1154;1156;3;CNTOCFIPD;County of Occurrence (FIPS) of Death;;;{}; Code range
+1157;1159;3;FILLER;Filler;;;;
+1160;1161;2;STRESFIPD;State of Residence (FIPS);;;{"VI":{"Territories":"Virgin Islands","Foreign residents":"","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"Virgin Islands","Guam Occurrenc":""},"CC":{"Territories":"","Foreign residents":"Canada","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"MX":{"Territories":"","Foreign residents":"Mexico","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"CU":{"Territories":"","Foreign residents":"Cuban","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"YY":{"Territories":"","Foreign residents":"Remainder of world","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"PR":{"Territories":"Puerto Rico","Foreign residents":"","Puerto Rico Occurrence":"Puerto Rico","Virgin Islands Occurrence":"","Guam Occurrenc":""},"GU":{"Territories":"Guam","Foreign residents":"","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":"Guam"},"US":{"Territories":"","Foreign residents":"","Puerto Rico Occurrence":"Foreign residents","Virgin Islands Occurrence":"Foreign residents","Guam Occurrenc":"U.S. resident.  Also considered a resident of Guam."},"ZZ":{"Territories":"","Foreign residents":"","Puerto Rico Occurrence":"Foreign residents","Virgin Islands Occurrence":"Foreign residents","Guam Occurrenc":"Foreign residents"}};
+1162;1163;2;FILLER;Filler;;;;
+1164;1165;2;DRCNTY;State/Country of Residence of Death Recode;;;{"VI":{"Territories":"Virgin Islands","Foreign residents":"","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"Virgin Islands","Guam Occurrenc":""},"CC":{"Territories":"","Foreign residents":"Canada","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"MX":{"Territories":"","Foreign residents":"Mexico","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"CU":{"Territories":"","Foreign residents":"Cuban","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"YY":{"Territories":"","Foreign residents":"Remainder of world","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":""},"PR":{"Territories":"Puerto Rico","Foreign residents":"","Puerto Rico Occurrence":"Puerto Rico","Virgin Islands Occurrence":"","Guam Occurrenc":""},"GU":{"Territories":"Guam","Foreign residents":"","Puerto Rico Occurrence":"","Virgin Islands Occurrence":"","Guam Occurrenc":"Guam"},"US":{"Territories":"","Foreign residents":"","Puerto Rico Occurrence":"Foreign residents","Virgin Islands Occurrence":"Foreign residents","Guam Occurrenc":"U.S. resident.  Also considered a resident of Guam."},"ZZ":{"Territories":"","Foreign residents":"","Puerto Rico Occurrence":"Foreign residents","Virgin Islands Occurrence":"Foreign residents","Guam Occurrenc":"Foreign residents"}};
+1166;1168;3;CNTYRFPD;County of Residence (FIPS) of Death;;;{"000":"Foreign residents","999":"County less than 250,000 population"};001-nnn Code range
+1169;1181;13;FILLER;Filler;;;;
+1182;;1;CNTRSPPD;Population Size of County of Residence of Death;;;{"0":"County of 1,000,000 or more","1":"County of  500,000 to 1,000,000","2":"County of  250,000 to  500,000","9":"County of less than 250,000","Z":"Foreign residents"};
+1183;1185;3;FILLER;Filler;;;;
+1186;;1;HOSPD;Place of Death and Decendent’s Status;;;{"1":"Hospital, clinic or Medical Center – Inpatient","2":"Hospital, clinic or Medical Center – Outpatient or admitted to Emergency Room","3":"Hospital, clinic or Medical Center – Dead on Arrival","4":"Decedent’s home","5":"Hospice facility","6":"Nursing home/long term care","7":"Other","9":"Place of death unknown"};
+1187;;1;WEEKDAYD;Day of Week of Death;;;{"1":"Sunday","2":"Monday","3":"Tuesday","4":"Wednesday","5":"Thursday","6":"Friday","7":"Saturday","9":"Unknown"};
+1188;1191;4;DTHYR;Death Year;;;{};
+1192;1257;66;FILLER;Filler;;;;
+1258;1259;2;DOD_MM;Month of Death;;;{"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11 ":"November","12":"December"};

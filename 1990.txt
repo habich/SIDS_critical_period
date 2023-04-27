@@ -1,0 +1,230 @@
+pos_start;pos_end;len;field;description;reportingFlagPosision;Vers;Definition;Commentary
+1;;1;MATCHS_91;Match Status;;;{"1":"Matched birth/infant death record","2":"Late Filed Matched Birth/Infant Death Record","3":"Surviving infant record", "4":"Unmatched infant death record"}; 4 - This code is used in the unlinked file
+2;6;5;IDNUMBER;Infant Death Number;;;{};This number uniquely identifies the same infant in the numerator and denominator-plus files.
+7;10;4;BIRYR;Year of Birth;;;{};
+11;;1;RESSTATB_91;Resident Status - Birth;;;{"1":"RESIDENTS: State and county of occurrence and residence are the same.","2":"INTRASTATE NONRESIDENTS: State of occurrence and residence are the same, but county is different.","3":"INTERSTATE NONRESIDENTS: State of occurrence and residence are different, but both are in the 50 States and D.C.","4":"FOREIGN RESIDENTS: State of occurrence is one of the 50 States or the District of Columbia, but place of residence of mother is outside of the 50 States and D.C."};
+12;;1;PLDEL;Place or Facility of Delivery;;;{"1":"Hospital","2":"Freestanding Birth Center","3":"Clinic / Doctor’s Office","4":"Residence","5":"Other","9":"Unknown"};
+13;;1;ATTEND;Attendant;;;{"1":"Doctor of Medicine (MD)","2":"Doctor of Osteopathy (DO)","3":"Certified Nurse Midwife (CNM)","4":"Other Midwife","5":"Other","9":"Unknown or not stated"};
+14;15;2;STOCCFIPB;State of Occurrence (FIPS) - Birth;;;{"01":"Alabama","02":"Alaska","04":"Arizona","05":"Arkansas","06":"California","08":"Colorado","09":"Connecticut","10":"Delaware","11":"District of Columbia","12":"Florida","13":"Georgia","15":"Hawaii","16":"Idaho","17":"Illinois","18":"Indiana","19":"Iowa","20":"Kansas","21":"Kentucky","22":"Louisiana","23":"Maine","24":"Maryland","25":"Massachusetts","26":"Michigan","27":"Minnesota","28":"Mississippi","29":"Missouri","30":"Montana","31":"Nebraska","32":"Nevada","33":"New Hampshire","34":"New Jersey","35":"New Mexico","36":"New York","37":"North Carolina","38":"North Dakota","39":"Ohio","40":"Oklahoma","41":"Oregon","42":"Pennsylvania","44":"Rhode Island","45":"South Carolina","46":"South Dakota","47":"Tennessee","48":"Texas","49":"Utah","50":"Vermont","51":"Virginia ","53":"Washington","54":"West Virginia","55":"Wisconsin","56":"Wyoming"};
+16;18;3;CNTOCFIPB;County of Occurrence (FIPS) - Birth;;;{"999":"County less than 250,000 population"};001-nnn Code range
+19;20;2;STRESFIPB;State of Residence (FIPS) - Birth;;;{"01":"Alabama","02":"Alaska","04":"Arizona","05":"Arkansas","06":"California","08":"Colorado","09":"Connecticut","10":"Delaware","11":"District of Columbia","12":"Florida","13":"Georgia","15":"Hawaii","16":"Idaho","17":"Illinois","18":"Indiana","19":"Iowa","20":"Kansas","21":"Kentucky","22":"Louisiana","23":"Maine","24":"Maryland","25":"Massachusetts","26":"Michigan","27":"Minnesota","28":"Mississippi","29":"Missouri","30":"Montana","31":"Nebraska","32":"Nevada","33":"New Hampshire","34":"New Jersey","35":"New Mexico","36":"New York","37":"North Carolina","38":"North Dakota","39":"Ohio","40":"Oklahoma","41":"Oregon","42":"Pennsylvania","44":"Rhode Island","45":"South Carolina","46":"South Dakota","47":"Tennessee","48":"Texas","49":"Utah","50":"Vermont","51":"Virginia ","53":"Washington","54":"West Virginia","55":"Wisconsin","56":"Wyoming"};
+21;23;3;CNTYRFPB;County of Residence (FIPS) - Birth;;;{"000":"Foreign residents","999":"County less than 250,000 population"};001-nnn Code range
+24;25;2;BRSTATE;Expanded State of Residence - NCHS Codes - Birth;;;{"01":"Alabama","02":"Alaska","03":"Arizona","04":"Arkansas","05":"California","06":"Colorado","07":"Connecticut","08":"Delaware","09":"District of Columbia","10":"Florida","11":"Georgia","12":"Hawaii","13":"Idaho","14":"Illinois","15":"Indiana","16":"Iowa","17":"Kansas","18":"Kentucky","19":"Louisiana","20":"Maine","21":"Maryland","22":"Massachusetts","23":"Michigan","24":"Minnesota","25":"Mississippi","26":"Missouri","27":"Montana","28":"Nebraska","29":"Nevada","30":"New Hampshire","31":"New Jersey","32":"New Mexico","33":"New York","34":"New York City","35":"North Carolina","36":"North Dakota","37":"Ohio","38":"Oklahoma","39":"Oregon","40":"Pennsylvania","41":"Rhode Island","42":"South Carolina","43":"South Dakota","44":"Tennessee","45":"Texas","46":"Utah","47":"Vermont","48":"Virginia","49":"Washington","50":"West Virginia","51":"Wisconsin","52":"Wyoming","53":"Puerto Rico","54":"Virgin Islands","55":"Guam","56":"Canada","57":"Cuba","58":"Mexico","60":"Remainder of the World"};
+26;28;3;CITYRESB;City of Residence - NCHS Codes - Birth;;;{"999":"Balance of county","ZZZ":"Foreign residents"};Cities are numbered alphabetically within each State and identify each city with a population of 250,000 or more in 1980. (Note: To uniquely identify a city, both the State and city codes must be used. State, county and city codes may also be used.)
+29;;1;MAGEFLG;Age of Mother Flag;;;{" ":"Not imputed and reported age is not used","1":"Reported age is used","2":"Age is imputed"};
+30;31;2;DMAGE;Age of Mother;;;{};
+32;;1;MAGER8;Mother’s Age Recode 8;;;{"1":"under 15 years","2":"15-19 years","3":"20-24 years","4":"25-29 years","5":"30-34 years","6":"35-39 years","7":"40-44 years","8":"45-54 years"};
+33;;1;ORRACEM;Hispanic Origin and Race of Mother Recode;;;{"0":"Non-Hispanic","1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","9":"Origin unknown or not stated"};
+34;;1;ORRACEM;Hispanic Origin and Race of Mother Recode;;;{"1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","6":"Non-Hispanic White","7":"Non-Hispanic Black","8":"Non-Hispanic Other Races","9":"Origin unknown or not stated"};
+35;;1;MRACEIMP;Mother’s Race Imputed;;;{" ":"Mother's' race not imputed", "1":"Unknown race imputed"};
+36;37;2;MRACE_91;Race of Mother;;;{"01":"White","02":"Black","03":"American Indian/Alaskan Native","04":"Chinese","05":"Japanese","06":"Hawaiian (includes part Hawaiian)","07":"Filipino","08":"Other Asian or Pacific Islander","09":"All other Races"};
+38;;1;MRACE3;Race of Mother Recode 3;;;{"1":"White","2":"Races other than White or Black","3":"Black"};
+39;40;2;DMEDUC;Education of Mother Detail;;;{"00":"No formal education","01":"1 year of elementary school","02":"2 years of elementary school","03":"3 years of elementary school","04":"4 years of elementary school","05":"5 years of elementary school","06":"6 years of elementary school","07":"7 years of elementary school","08":"8 years of elementary school","09":"1 year of high school","10":"2 years of high school","11":"3 years of high school","12":"4 years of high school","13":"1 year of college","14":"2 years of college","15":"3 years of college","16":"4 years of college","17":"5 or more years of college","99":"Not stated"};
+41;;1;MEDUC6;Mother’s Education Recode 6;;;{"1":"0 –8 years","2":"9 –11 years","3":"12 years","4":"13 –15 years","5":"16 years and over","6":"Not stated"};
+42;;1;DMARIMP;Marital Status of Mother Imputation Flag;;;{" ":"Marital Status not imputed","1":"Marital Status imputed"};
+43;;1;DMAR_91;Mother’s Marital Status;;;{"1":"Married","2":"Unmarried"};
+44;45;2;MPLBIR;Place of Birth of Mother (Cont’d);;;{"01":"Alabama","02":"Alaska","03":"Arizona","04":"Arkansas","05":"California","06":"Colorado","07":"Connecticut","08":"Delaware","09":"District of Columbia","10":"Florida","11":"Georgia","12":"Hawaii","13":"Idaho","14":"Illinois","15":"Indiana","16 ":"Iowa","17":"Kansas","18":"Kentucky","19":"Louisiana","20":"Maine","21 ":"Maryland","22":"Massachusetts","23":"Michigan","24":"Minnesota","25":"Mississippi","26":"Missouri","27":"Montana","28":"Nebraska","29":"Nevada","30":"New Hampshire","31":"New Jersey","32":"New Mexico","33":"New York","34":"North Carolina","35":"North Dakota","36":"Ohio","37":"Oklahoma","38":"Oregon","39":"Pennsylvania","40":"Rhode Island","41":"South Carolina","42":"South Dakota","43":"Tennessee","44":"Texas","45":"Utah","46":"Vermont","47":"Virginia","48":"Washington","49":"West Virginia","50":"Wisconsin","51":"Wyoming","52":"Puerto Rico","53":"Virgin Islands","54":"Guam","55":"Canada","56":"Cuba","57":"Mexico","59":"Remainder of the World","99":"Not Classifiable"};
+46;;1;MPLBIRR;Place of Birth of Mother Recode;;;{"1":"Born in the 50 States and D.C.","2":"Born outside the 50 States and DC","3":"Unknown or not stated"," ":"This item not recorded"};
+47;48;2;DTOTORD;Detail Total Birth Order;;;{"99":"Unknown"};Sum of live birth order and other terminations of pregnancy.
+49;50;2;DLIVORD;Detail Live Birth Order;;;{"99":"Unknown"};Sum of live births now living and now dead plus one
+51;52;2;MONPRE;Detail Month of Pregnancy Prenatal Care Began;;;{"00 ":"No prenatal care","01 ":"1st month","02 ":"2nd month","03 ":"3rd month","04 ":"4th month","05 ":"5th month","06 ":"6th month","07 ":"7th month","08 ":"8th month","09 ":"9th month","99 ":"Unknown or not stated"};
+53;;1;MPRE5;Month Prenatal Care Began Recode 5;;;{"1 ":"1st Trimester (1st-3rd month)","2 ":"2nd Trimester (4th-6th month)","3 ":"3rd Trimester (7th-9th month)","4 ":"No prenatal care","5 ":"Unknown or not stated"};
+54;55;2;NPREVIST;Total Number of Prenatal Visits;;;{"00":"No prenatal visits","49":"49 or more visits","99":"Unknown or not stated"};Stated number of visits
+56;;1;ADEQUACY;Adequacy of Care Recode (Kessner Index);;;{"1":"Adequate","2":"Intermediate","3":"Inadequate","4":"Unknown"};
+57;59;3;DISLLB;Interval of Last Last Live Birth;;;{"777":"No previous live birth","000":"Zero month (plural birth)", "999":"Unknown"};One to four hundred sixty-eight months
+60;;1;FAGERFLG;Father’s Reported Age Used;;;{" ":"Father’s reported age not used","1":"Father’s reported age used"};
+61;62;2;DFAGE;Father’s Reported Age;;;{"99":"Unknown or not stated"};09-98 Father’s reported age in years
+63;;1;ORFATH;Hispanic Origin of Father;;;{"0":"Non-Hispanic","1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","9":"Origin unknown or not stated"};
+64;;1;ORRACEF;Hispanic Origin and Race of Father Recode;;;{"1":"Mexican","2":"Puerto Rican","3":"Cuban","4":"Central or South American","5":"Other and Unknown Hispanic","6":"Non-Hispanic White","7":"Non-Hispanic Black","8":"Non-Hispanic Other Races","9":"Origin unknown or not stated"};
+65;66;2;FRACE_91;Race of Father (Cont’d);;;{"01":"White","02":"Black","03":"American Indian (includes Aleuts and Eskimos)","04":"Chinese","05":"Japanese","06":"Hawaiian (includes part-Hawaiian)","07":"Filipino","08":"Other Asian or Pacific Islander","09":"All other races","99":"Unknown or not stated"};
+67;68;2;DFEDUC; Education of Father Detail;;;{"00":"No formal education","01":"1 year of elementary school","02":"2 years of elementary school","03":"3 years of elementary school","04":"4 years of elementary school","05":"5 years of elementary school","06":"6 years of elementary school","07":"7 years of elementary school","08":"8 years of elementary school","09":"1 year of high school","10":"2 years of high school","11":"3 years of high school","12":"4 years of high school","13":"1 year of college","14":"2 years of college","15":"3 years of college","16":"4 years of college","17":"5 or more years of college","99":"Not stated"};
+69;;1;CDOBMIMP;Month of Birth of Child Imputation Flag;;;{" ":"Month is not imputed","1":"Month is imputed"};
+70;71;2;BIRMON;Month of Birth;;;{"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11 ":"November","12":"December"};
+72;;1;GESTFLG;Gestation Imputed Flag;;;{" ":"Not imputed and the clinical estimate of gestation is not used","1":"Clinical estimate is used","2":"Gestation is imputed"};
+73;74;2;GESTAT;Gestation - Detail in Weeks;;;{"99":"Unknown"};17-47 17th through 47th week of Gestation
+75;76;2;GESTAT10;Gestation Recode 10;;;{"01":"Under 20 weeks","02":"20-27 weeks","03":"28-31 weeks","04":"32-35 weeks","05":"36 weeks","06":"37-39 weeks","07":"40 weeks","08":"41 weeks","09":"42 weeks and over","10":"Unknown"};
+77;;1;CSEXIMP;Imputed Sex;;;{" ":"Infant Sex not Imputed","1":"Infant Sex is Imputed"};
+78;;1;CSEX_01;Sex of Infant;;;{"1":"Male","2":"Female"};
+79;82;4;DBIRWT;Imputed Birth Weight;;;{"9999":"Not stated birth weight"};0227-8165 Number of grams
+83;84;2;BIRWT12;Birth Weight Recode 12 (Imputed);;;{"01":"499 grams or less","02":"500-999 grams","03":"1000-1499 grams","04":"1500-1999 grams","05":"2000-2499 grams","06":"2500-2999 grams","07":"3000-3499 grams","08":"3500-3999 grams","09":"4000-4499 grams","10":"4500-4999 grams","11":"5000-8165 grams","12":"Unknown or not stated"};
+85;;1;BIRWT4;Birth Weight Recode 4 (Imputed);;;{"1":"1499 grams or less","2":"1500-2499 grams","3":"2500 grams or more","4":"Unknown or not stated"};
+86;;1;PLURIMP;Plurality Imputed;;;{" ":"Plurality is imputed","1":"Plurality is not imputed"};
+87;;1;DPLURAL;Plurality;;;{"1":"Single","2":"Twin","3":"Triplet","4":"Quadruplet","5":"Quintuplet or higher"};
+88;89;2;OMAPS;One Minute Apgar Score;;;{"99":"Unknown or not stated"};A score of 1-10
+90;91;2;FMAPS;Five Minute APGAR Score;;;{"99":"Unknown or not stated"};00-10 A score of 0-10
+92;;1;VAGINAL;Vaginal;;;{"1":"The method was used","2":"The method was not used","8":"Method not on certificate","9":"Method unknown or not stated"};
+93;;1;VBAC;Vaginal Birth After Previous C-Section;;;{"1":"The method was used","2":"The method was not used","8":"Method not on certificate","9":"Method unknown or not stated"};
+94;;1;PRIMAC;Primary C-Section;;;{"1":"The method was used","2":"The method was not used","8":"Method not on certificate","9":"Method unknown or not stated"};
+95;;1;REPEAC;Repeat C-Section;;;{"1":"The method was used","2":"The method was not used","8":"Method not on certificate","9":"Method unknown or not stated"};
+96;;1;FORCEP;Forceps;;;{"1":"The method was used","2":"The method was not used","8":"Method not on certificate","9":"Method unknown or not stated"};
+97;;1;VACUUM;Vacuum;;;{"1":"The method was used","2":"The method was not used","8":"Method not on certificate","9":"Method unknown or not stated"};
+98;;1;FILLER;Filler;;;;
+99;;1;DELMETH5;Delivery Method Recode;;;{"1":"Vaginal (excludes vaginal after previous C-section)","2":"Vaginal after previous c-section","3":"Primary C-section","4":"Repeat C-section","5":"Not stated"};
+100;;1;FILLER;Filler;;;;
+101;;1;ANEMIA;Anemia (Hct.<30/Hgb.<10);;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+102;;1;CARDIAC;Cardiac disease;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+103;;1;LUNG;Acute or chronic lung disease;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+104;;1;DIABETES;Diabetes;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+105;;1;HERPES;Genital herpes;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+106;;1;HYDRA;Hydramnios/Oligohydramnios;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+107;;1;HEMO;Hemoglobinopathy;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+108;;1;CHYPER;Hypertension, chronic;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+109;;1;PHYPER;Hypertension, pregnancy-associated;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+110;;1;ECLAMP;Eclampsia;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+111;;1;INCERVIX;Incompetent cervix;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+112;;1;PRE4000;Previous infant 4000+ grams;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+113;;1;PRETERM;Previous preterm or small-for-gestational-age infant;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"}
+114;;1;RENAL;Renal disease;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+115;;1;RH;Rh sensitization;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+116;;1;UTERINE;Uterine bleeding;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+117;;1;OTHERMR;Other Medical Risk Factors;;;{"1":"Factor reported","2":"Factor not reported","8":"Factor not on certificate","9":"Factor not classifiable"};
+118;;1;TOBACCO;Tobacco Use During Pregnancy;;;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+119;120;2;CIGAR;Average Number of Cigarettes Per Day;;;{"98":"98 or more cigarettes daily","99":"Unknown or not stated"};00-97 Number of cigarettes daily
+121;;1;CIGAR6;Average Number of Cigarettes Per Day Recode;;;{"0":"Non-smoker","1":"1-5 cigarettes per day","2":"6-10 cigarettes per day","3":"11-20 cigarettes per day","4":"21-40 cigarettes per day","5":"41 or more cigarettes per day","6":"Unknown or not stated"};
+122;;1;ALCOHOL;Alcohol Use During Pregnancy;;;{"1":"Yes","2":"No","9":"Unknown or not stated"};
+123;124;2;DRINK;Average Number of Drinks Per Week;;;{"98":"98 or more drinks per week","99":"Unknown or not stated"};As stated
+125;;1;DRINK5;Average Number of Drinks Per Week Recode;;;{"0":"Non-drinker","1":"1 drink per week","2":"2 drinks per week","3":"3-4 drinks per week","4":"5 or more drinks per week","5":"Unknown or not stated"};
+126;127;2;WTGAIN;Weight Gain;;;{"98":"98 pounds and over","99":"Unknown or not stated"};00-97 Weight gain in pounds
+128;;1;WTGAIN9;Weight Gain Recode;;;{"1":"Less than 16 pounds","2":"16-20 pounds","3":"21-25 pounds","4":"26-30 pounds","5":"31-35 pounds","6":"36-40 pounds","7":"41-45 pounds","8":"46 or more pounds","9":"Unknown or not stated"};
+129;;1;FILLER;Filler;;;;
+130;;1;AMNIO;Amniocentesis;;;{"1":"Procedure reported","2":"Procedure not reported","8":"Procedure not on certificate","9":"Procedure not classifiable"};
+131;;1;MONITOR;Electronic fetal monitoring;;;{"1":"Procedure reported","2":"Procedure not reported","8":"Procedure not on certificate","9":"Procedure not classifiable"};
+132;;1;INDUCT;Induction of labor;;;{"1":"Procedure reported","2":"Procedure not reported","8":"Procedure not on certificate","9":"Procedure not classifiable"};
+133;;1;STIMULA;Stimulation of labor;;;{"1":"Procedure reported","2":"Procedure not reported","8":"Procedure not on certificate","9":"Procedure not classifiable"};
+134;;1;TOCOL;Tocolysis;;;{"1":"Procedure reported","2":"Procedure not reported","8":"Procedure not on certificate","9":"Procedure not classifiable"};
+135;;1;ULTRAS;Ultrasound;;;{"1":"Procedure reported","2":"Procedure not reported","8":"Procedure not on certificate","9":"Procedure not classifiable"};
+136;;1;OTHEROB;Other Obstetric Procedures;;;{"1":"Procedure reported","2":"Procedure not reported","8":"Procedure not on certificate","9":"Procedure not classifiable"};
+137;;1;FILLER;Filler;;;;
+138;;1;FEBRILE;Febrile (>100 degrees F. or 38 degrees C.);;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+139;;1;MECONIUM;Meconium, moderate/heavy;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+140;;1;RUPTURE;Premature rupture of membrane (>12 hours);;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+141;;1;ABRUPTIO;Abruptio placenta;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+142;;1;PREPLACE;Placenta previa;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+143;;1;EXCEBLD;Other excessive bleeding;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+144;;1;SEIZURE;Seizures during labor;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+145;;1;PRECIP;Precipitous labor (<3 hours);;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+146;;1;PROLONG;Prolonged labor (>20 hours);;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+147;;1;DYSFUNC;Dysfunctional labor;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+148;;1;BREECH;Breech/Malpresentation;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+149;;1;CEPHALO;Cephalopelvic disproportion;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+150;;1;CORD;Cord prolapse;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+151;;1;ANESTHE;Anesthetic complications;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+152;;1;DISTRESS;Fetal distress;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+153;;1;OTHERLB;Other Complications of Labor and/or Delivery;;;{"1":"Complication reported","2":"Complication not reported","8":"Complication not on certificate","9":"Complication not classifiable"};
+154;;1;FILLER;Filler;;;;
+155;;1;NANEMIA;Anemia Hct.>39/Hgb.<13);;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+156;;1;INJURY;Birth injury;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+157;;1;ALCOSYN;Fetal alcohol syndrome;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+158;;1;HYALINE;Hyaline membrane disease;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+159;;1;MECONSYN;Meconium aspiration syndrome;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+160;;1;VENL30;Assisted ventilation, less than 30 minutes;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+161;;1;VEN30M;Assisted ventilation, 30 minutes or more;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+162;;1;NSEIZ;Seizures;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+163;;1;OTHERAB;Other Abnormal Conditions of the Newborn;;;{"1":"Condition reported","2":"Condition not reported","8":"Condition not on certificate","9":"Condition not classifiable"};
+164;;1;FILLER;Filler;;;;
+165;;1;ANEN;Anencephalus;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+166;;1;SPINA;Spina bifida/Meningocele;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+167;;1;HYDRO;Hydrocephalus;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+168;;1;MICROCE;Microcephalus;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+169;;1;NERVOUS;Other central nervous system anomalies;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+170;;1;HEART;Heart malformations;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+171;;1;CIRCUL;Other circulatory/respiratory anomalies;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+172;;1;RECTAL;Rectal atresia/stenosis;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+173;;1;TRACHEO;Tracheo-esophageal fistula/Esophageal atresia;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+174;;1;OMPHALO;Omphalocele/Gastroschisis;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+175;;1;GASTRO;Other gastrointestinal anomalies;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+176;;1;GENITAL;Malformed genitalia;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+177;;1;RENALAGE;Renal agenesis;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+178;;1;UROGEN;Other urogenital anomalies;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+179;;1;CLEFTLP;Cleft lip/palate;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+180;;1;ADACTYLY;Polydactyly/Syndactyly/Adactyly;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+181;;1;CLUBFOOT;Club foot;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+182;;1;HERNIA;Diaphragmatic hernia;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+183;;1;MUSCULO;Other musculoskeletal/integumental anomalies;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+184;;1;DOWNS;Down's syndrome;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+185;;1;CHROMO;Other chromosomal anomalies;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+186;;1;OTHERCON;Other congenital anomalies;;;{"1":"Anomaly reported","2":"Anomaly not reported","8":"Anomaly not on certificate","9":"Anomaly not classifiable"};
+187;;1;ORIGM;Origin of mother;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+188;;1;ORIGF;Origin of father;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+189;;1;EDUCM;Education of mother;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+190;;1;EDUCF;Education of father;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+191;;1;GESTE;Clinical estimate of gestation;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+192;;1;OMAPSRF;1-minute Apgar score;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+193;;1;FMAPSRF;5-minute Apgar score;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+194;;1;DELMETRF;Method of delivery;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+195;;1;MEDRSK;Medical risk factors;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+196;;1;TOBUSE;Tobacco use;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+197;;1;ALCUSE;Alcohol use;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+198;;1;WTGN;Weight gain;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+199;;1;OBSTRC;Weight gain;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+200;;1;CLABOR;Complications of labor and/or delivery;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+201;;1;ABNML;Abnormal conditions of newborn;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+202;;1;CONGAN;Congenital anomalies;;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+203;;1;FILLER;Filler;;;;
+204;;1;EDUCMSA;Education of Mother (Based on SMSA);;;{"0":"The item is not reported","1":"The item is reported or partially reported."};
+205;206;2;FILLER;Filler;;;;
+207;;1;WEEKDAYB;Day of Week Child Born;;;{"1":"Sunday","2":"Monday","3":"Tuesday","4":"Wednesday","5":"Thursday","6":"Friday","7":"Saturday"};
+208;;1;FILLER;Filler;;;;
+209;210;2;CRACE;Race of Child;;;{"01":"White","02":"Black","03":"American Indian/Alaskan Native","04":"Chinese","05":"Japanese","06":"Hawaiian (includes part Hawaiian)","07":"Filipino","08":"Other Asian or Pacific Islander","09":"All other Races"};
+211;212;2;FILLER;Filler;;;;
+213;215;3;AGED;Age at Death in Days;;;{};000-365 Number of days
+216;;1;AGER5;Infant age recode 5;;;{"1":"Under 1 hour","2":"1 – 23 hours","3":"1 – 6 days","4":"7 – 27 days (late neonatal)","5":"28 days and over (postneonatal)"};
+217;;1;AUTOPSY_91;Autopsy;;;{"1":"Yes","2":"No","8":"Autopsy performed not on certificate","9":"Autopsy performed not stated"};
+218;;1;ACCIDPL;Place of Injury for Causes W00-Y34, except Y06.- and Y07.-;;;{" ":"Causes other than W00-Y34, except Y06-Y07 ","0":"Home ","1":"Farm ","2":"Mine and quarry ","3":"Industrial place and premises ","4":"Place for recreation and sport ","5":"Street and highway ","6":"Public building ","7":"Resident institution ","8":"Other specified places ","9":"Place of accident not specified"};
+219;222;4;UC0D9;ICD Code (9th Revision);;;{};
+223;225;3;UCODR61;61 Infant Cause Recode;;;{};
+226;260;35;FILLER;Filler;;;;
+261;262;2;EANUM;Number of Entity-Axis Conditions;;;{};00-20 Code range
+263;269;7;ENTITY_1ST_C;1st Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+270;276;7;ENTITY_2ND_C;2nd Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+277;283;7;ENTITY_3RD_C;3rd Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+284;290;7;ENTITY_4TH_C;4th Condition;;;{};Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+291;297;7;ENTITY_5TH_C;5th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+298;304;7;ENTITY_6TH_C;6th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+305;311;7;ENTITY_7TH_C;7th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+312;318;7;ENTITY_8TH_C;8th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+319;325;7;ENTITY_9TH_C;9th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+326;332;7;ENTITY_10TH_C;10th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+333;339;7;ENTITY_11TH_C;11th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+340;346;7;ENTITY_12TH_C;12th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+347;353;7;ENTITY_13TH_C;13th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+354;360;7;ENTITY_14TH_C;14th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+361;367;7;ENTITY_15TH_C;15th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+368;374;7;ENTITY_16TH_C;16th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+375;381;7;ENTITY_17TH_C;17th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+382;388;7;ENTITY_18TH_C;18th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+389;395;7;ENTITY_19TH_C;19th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+396;402;7;ENTITY_20TH_C;20th Condition;;;{}; Position 1: Part/line number on certificate 1:Part I, line 1 (a) 2:Part I, line 2 (b) 3:Part I, line 3 (c) 4:Part I, line 4 (d) 5:Part I, line 5 (e) 6:Part II, / Position 2: Sequence of condition within part/line 1-7: Code range / Position 3 – 6: Condition code See  ICD-10 for a complete list of codes
+403;404;2;RANUM;Number of Record-Axis Conditions;;;{};00-20 Code range
+405;409;5;RECORD_1ST_C;1st Condition;;;{};1-4 ICD10 Code 5
+410;414;5;RECORD_2ND_C;2nd Condition;;;{};1-4 ICD10 Code 5
+415;419;5;RECORD_3RD_C;3rd Condition;;;{};1-4 ICD10 Code 5
+420;424;5;RECORD_4TH_C;4th Condition;;;{};1-4 ICD10 Code 5
+425;429;5;RECORD_5TH_C;5th Condition;;;{};1-4 ICD10 Code 5
+430;434;5;RECORD_6TH_C;6th Condition;;;{};1-4 ICD10 Code 5
+435;439;5;RECORD_7TH_C;7th Condition;;;{};1-4 ICD10 Code 5
+440;444;5;RECORD_8TH_C;8th Condition;;;{};1-4 ICD10 Code 5
+445;449;5;RECORD_9TH_C;9th Condition;;;{};1-4 ICD10 Code 5
+450;454;5;RECORD_10TH_C;10th Condition;;;{};1-4 ICD10 Code 5
+455;459;5;RECORD_11TH_C;11th Condition;;;{};1-4 ICD10 Code 5
+460;464;5;RECORD_12TH_C;12th Condition;;;{};1-4 ICD10 Code 5
+465;469;5;RECORD_13TH_C;13th Condition;;;{};1-4 ICD10 Code 5
+470;474;5;RECORD_14TH_C;14th Condition;;;{};1-4 ICD10 Code 5
+475;479;5;RECORD_15TH_C;15th Condition;;;{};1-4 ICD10 Code 5
+480;484;5;RECORD_16TH_C;16th Condition;;;{};1-4 ICD10 Code 5
+485;489;5;RECORD_17TH_C;17th Condition;;;{};1-4 ICD10 Code 5
+490;494;5;RECORD_18TH_C;18th Condition;;;{};1-4 ICD10 Code 5
+495;499;5;RECORD_19TH_C;19th Condition;;;{};1-4 ICD10 Code 5
+500;504;5;RECORD_20TH_C;20th Condition;;;{};1-4 ICD10 Code 5
+505;;1;RESSTATD_91;Resident Status - Death;;;{"1":"RESIDENTS: State and county of occurrence and residence are the same.","2":"INTRASTATE NONRESIDENTS: State of occurrence and residence are the same, but county is different.","3":"INTERSTATE NONRESIDENTS: State of occurrence and residence are different, but both are in the 50 States and D.C.","4":"FOREIGN RESIDENTS: State of occurrence is one of the 50 States or the District of Columbia, but place of residence of mother is outside of the 50 States and D.C."};
+506;507;2;STOCCFIPD_02;State of Occurrence (FIPS) - Death;;;{"01":"Alabama","02":"Alaska","04":"Arizona","05":"Arkansas","06":"California","08":"Colorado","09":"Connecticut","10":"Delaware","11":"District of Columbia","12":"Florida","13":"Georgia","15":"Hawaii","16":"Idaho","17":"Illinois","18":"Indiana","19":"Iowa","20":"Kansas","21":"Kentucky","22":"Louisiana","23":"Maine","24":"Maryland","25":"Massachusetts","26":"Michigan","27":"Minnesota","28":"Mississippi","29":"Missouri","30":"Montana","31":"Nebraska","32":"Nevada","33":"New Hampshire","34":"New Jersey","35":"New Mexico","36":"New York","37":"North Carolina","38":"North Dakota","39":"Ohio","40":"Oklahoma","41":"Oregon","42":"Pennsylvania","44":"Rhode Island","45":"South Carolina","46":"South Dakota","47":"Tennessee","48":"Texas","49":"Utah","50":"Vermont","51":"Virginia ","53":"Washington","54":"West Virginia","55":"Wisconsin","56":"Wyoming"};
+508;510;3;CNTOCFIPD;County of Occurrence (FIPS) - Death;;;{"999":"County less than 250,000 population"};001-nnn Code range
+511;512;2;STRESFIPD_02;State of Residence (FIPS) - Death;;;{"01":"Alabama","02":"Alaska","04":"Arizona","05":"Arkansas","06":"California","08":"Colorado","09":"Connecticut","10":"Delaware","11":"District of Columbia","12":"Florida","13":"Georgia","15":"Hawaii","16":"Idaho","17":"Illinois","18":"Indiana","19":"Iowa","20":"Kansas","21":"Kentucky","22":"Louisiana","23":"Maine","24":"Maryland","25":"Massachusetts","26":"Michigan","27":"Minnesota","28":"Mississippi","29":"Missouri","30":"Montana","31":"Nebraska","32":"Nevada","33":"New Hampshire","34":"New Jersey","35":"New Mexico","36":"New York","37":"North Carolina","38":"North Dakota","39":"Ohio","40":"Oklahoma","41":"Oregon","42":"Pennsylvania","44":"Rhode Island","45":"South Carolina","46":"South Dakota","47":"Tennessee","48":"Texas","49":"Utah","50":"Vermont","51":"Virginia ","53":"Washington","54":"West Virginia","55":"Wisconsin","56":"Wyoming"};
+513;515;3;CNTYRFPD;County of Residence (FIPS) - Death;;;{"000":"Foreign residents","999":"County less than 250,000 population"};001-nnn Code range
+516;517;2;DRSTATE_91;Expanded State of Residence - NCHS Codes - Deaths;;;{"01":"Alabama","02":"Alaska","03":"Arizona","04":"Arkansas","05":"California","06":"Colorado","07":"Connecticut","08":"Delaware","09":"District of Columbia","10":"Florida","11":"Georgia","12":"Hawaii","13":"Idaho","14":"Illinois","15":"Indiana","16":"Iowa","17":"Kansas","18":"Kentucky","19":"Louisiana","20":"Maine","21":"Maryland","22":"Massachusetts","23":"Michigan","24":"Minnesota","25":"Mississippi","26":"Missouri","27":"Montana","28":"Nebraska","29":"Nevada","30":"New Hampshire","31":"New Jersey","32":"New Mexico","33":"New York","34":"North Carolina","35":"North Dakota","36":"Ohio","37":"Oklahoma","38":"Oregon","39":"Pennsylvania","40":"Rhode Island","41":"South Carolina","42":"South Dakota","43":"Tennessee","44":"Texas","45":"Utah","46":"Vermont","47":"Virginia","48":"Washington","49":"West Virginia","50":"Wisconsin","51":"Wyoming","52":"Puerto Rico","53":"Virgin Islands","54":"Guam","55":"Canada","56":"Cuba","57":"Mexico","59":"Remainder of the World"};
+518;520;3;CITYRESD;City of Residence - NCHS Codes - Death;;;{"999":"Balance of county","ZZZ":"Foreign residents"};Cities are numbered alphabetically within each State and identify each city with a population of 250,000 or more in 1980. (Note: To uniquely identify a city, both the State and city codes must be used. State, county and city codes may also be used.)
+521;;1;HOSPD_02;Place of Death and Decendent’s Status;;;{"1":"Hospital, clinic or Medical Center – Inpatient","2":"Hospital, clinic or Medical Center – Outpatient or admitted to Emergency Room","3":"Hospital, clinic or Medical Center – Dead on Arrival","4":"Hospital, Clinic or Medical Center - Patient status unknown","5":"Nursing home","6":"Residence","7":"Other","9":"Place of death unknown"};
+522;525;4;DTHYR;Death Year;;;{};
+526;527;2;DTHMON;Month of Death;;;{"01":"January","02":"February","03":"March","04":"April","05":"May","06":"June","07":"July","08":"August","09":"September","10":"October","11 ":"November","12":"December"};
+528;;1;WEEKDAYD;Day of Week of Death;;;{"1":"Sunday","2":"Monday","3":"Tuesday","4":"Wednesday","5":"Thursday","6":"Friday","7":"Saturday","9":"Unknown"};
+529;535;7;FILLER;Filler;;;;
